@@ -34,7 +34,7 @@ main img {
     height: auto;
     border:#000;
     padding: 10px;
-    box-shadow:#333;
+    box-shadow:0 0 30px gray;
 }
 p { padding: 0;}
 footer {
