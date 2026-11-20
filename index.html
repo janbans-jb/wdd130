@@ -1,47 +1,170 @@
-<!DOCTYPE html>
-<html lang="en-US">
+/* CSS Variables */
+:root {
+--primary-color: #064663;
+--secondary-color: #4da8a8;
+--accent1-color: #183b4e;
+--accent2-color: #f4f4f4;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Johnbosco Lubega | WDD 130</title>
-    <meta name="description"
-      content="The purpose of this page is for studing and learning how to code.">
-    <meta name="author" content="John Bosco Lubega">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+--heading-font: Georgia, serif;
+--body-font: Arial, Helvetica, sans-serif;
+}
 
-<body>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Websites</a>
-        </nav>
-    </header>
-    <main>
+/* CSS Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-        <h1>Johnbosco Lubega | WDD 130</h1>
+/* Body */
+body {
+font-family: var(--body-font);
+color: var(--accent1-color);
+background-color: #ffffff;
+}
 
-        <img src="images/johnbosco.jpg" alt="Hello my name is John Bosco" width="200">
-        <p id="jb">Am Lubega John Bosco residing in masaka am looking forward to learning coding.
-        </p>
-        <aside>
-            <h2>Uganda</h2>
-            <img src="images/uganda.jpg" alt="Uganda's landscape">
-            <p>Uganda is a country in East Africa. The country is boundered by South Sudan in the
-                north, DRC cong in the West, Kenya is the East, and Tanzania in the South. The
-                country is known for Tourism due to a wide coverage of wildlife reach in different
-                spicies of animals and aquatic life. Uganda also has several tribes that have differ
-                culture with fascinating stories that people cherish</p>
-        </aside>
+/* Header, Main and Footer */
+header, main, footer {
+width: 840px;
+margin: 0 auto;
+}
 
+/* Header */
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px;
+background-color: var(--accent2-color);
+}
 
-    </main>
-    <footer>
-        <p>©2026 John Bosco</p>
-    </footer>
+header img {
+width: 100px;
+height: auto;
+}
 
+/* Navigation */
+nav {
+display: flex;
+gap: 20px;
+align-items: center;
+}
 
-</body>
+nav a {
+text-decoration: none;
+color: var(--primary-color);
+font-weight: bold;
+}
 
-</html>
+nav a:hover {
+color: var(--secondary-color);
+}
+
+/* Headings */
+h1, h2 {
+font-family: var(--heading-font);
+color: var(--primary-color);
+}
+
+/* General spacing */
+p, section, article {
+margin: 16px;
+padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+position: relative;
+width: 100%;
+}
+
+.hero img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+/* Hero Heading */
+.hero h1 {
+position: absolute;
+top: 20px;
+width: 100%;
+padding: 16px;
+text-align: center;
+opacity: 0.85;
+background-color: var(--accent1-color);
+color: #ffffff;
+}
+
+/* Hero Article */
+.hero article {
+position: absolute;
+bottom: 20px;
+left: 0;
+right: 0;
+background-color: rgba(255, 255, 255, 0.9);
+padding: 15px;
+overflow: auto;
+}
+
+.hero article img {
+float: right;
+width: 125px;
+height: auto;
+margin: 10px;
+border: 2px solid var(--secondary-color);
+}
+
+/* History Section */
+.history {
+text-align: center;
+padding: 20px;
+}
+
+.history h2 {
+margin-bottom: 15px;
+}
+
+.history p {
+line-height: 1.6;
+}
+
+/* Adventures Section */
+.adventures {
+text-align: center;
+padding: 30px;
+min-height: 100px;
+}
+
+.adventures h2 {
+margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+background-color: var(--accent2-color);
+}
+
+footer p {
+margin: 8px;
+}
+
+/* Social Media */
+.socialmedia {
+display: flex;
+gap: 12px;
+align-items: center;
+}
+
+.socialmedia a {
+text-decoration: none;
+}
+
+.socialmedia img {
+width: 30px;
+height: 30px;
+}
